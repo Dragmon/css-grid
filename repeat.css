@@ -1,0 +1,7 @@
+.contenedor{
+    display: grid;                          /**especifica que es una grid*/
+    grid-gap: 20px;                         /* espacio entre bloques*/
+
+    grid-template-columns: 200px repeat(4, 1fr) 200px;
+    grid-template-rows: repeat(3, 1fr);
+}

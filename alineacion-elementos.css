@@ -1,0 +1,20 @@
+.contenedor {
+    display: grid; /**especifica que es una grid*/
+    grid-gap: 20px; /* espacio entre bloques*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    /* alinear horizontalemnte auto start center end stretch */
+    justify-items: center;
+    /* alinear verticalmente auto start center end stretch */
+    align-items: center;
+
+}
+
+.contenedor .item{
+    background: #ff8000;
+    /* Posicionamiento del elemento de la celda crespetando los margenes */
+    /* auto start center end stretch */
+    justify-self: stretch;
+    align-self: stretch;
+}
+

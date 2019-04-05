@@ -1,0 +1,16 @@
+.contenedor {
+    display: grid; /**especifica que es una grid*/
+    grid-gap: 20px; /* espacio entre bloques*/
+    height: 700px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    
+    /* Alineación horizontal */
+    /* start / center / end /space-around /space-between /space-evenly */
+    justify-content: space-evenly;
+    /* Alineación vertical */
+    /* start / center / end /space-around /space-between /space-evenly */
+    align-content: space-evenly;
+}
+
+

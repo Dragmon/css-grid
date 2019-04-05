@@ -1,0 +1,54 @@
+.contenedor {
+    display: grid; /**especifica que es una grid*/
+    grid-gap: 20px; /* espacio entre bloques*/
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "header     header      header"
+        "sidebar-1  contenido   sidebar-2"
+        "sidebar-1  widget      sidebar-2"
+        "footer     footer      footer";
+}
+
+.contenedor .header {
+    background: #ff8000;
+    grid-column-start: header;
+    grid-column-end: header;
+}
+
+.contenedor .sidebar-1 {
+    background: #393e46;
+    /* Forma1
+        grid-column-start: sidebar-1;
+        grid-column-end: sidebar-1;
+        grid-row-start: sidebar-1;
+        grid-row-end: sidebar-1;
+        */
+    /* Forma2
+        grid-column: sidebar-1;
+        grid-row: sidebar-1;
+        */
+    /*Forma3*/
+    grid-area: sidebar-1;
+}
+
+.contenedor .contenido {
+    background: #663399;
+    grid-area: contenido;
+}
+
+.contenedor .sidebar-2 {
+    background: #7a977c;
+    grid-area: sidebar-2;
+}
+
+.contenedor .widget{
+    background: #1977a3;
+    grid-area: widget;
+}
+
+.contenedor .footer{
+    background: #96b7ec;
+    grid-area: footer;
+}
